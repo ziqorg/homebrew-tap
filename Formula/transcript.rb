@@ -5,21 +5,21 @@
 class Transcript < Formula
   desc "Fetch a video/post transcript from the command line."
   homepage "https://transcript.land"
-  version "0.1.9"
+  version "0.1.10"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ziqorg/transcript/releases/download/v0.1.9/transcript_0.1.9_darwin_amd64.tar.gz"
-      sha256 "e8fdcedbf5f131ced3f2f06ab565d3b70cea9e1e4ffbe81f08754cf76fb2a06e"
+      url "https://github.com/ziqorg/transcript/releases/download/v0.1.10/transcript_0.1.10_darwin_amd64.tar.gz"
+      sha256 "0cd4085f4a935c95d5b16fe948a449ceae50cfcd06d92e435eac7d47b2e3a2e4"
 
       define_method(:install) do
         bin.install "transcript"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ziqorg/transcript/releases/download/v0.1.9/transcript_0.1.9_darwin_arm64.tar.gz"
-      sha256 "9c7dfa041176d3d229996d19068be5cc0478d7a2782c2a633002e51406a2b54c"
+      url "https://github.com/ziqorg/transcript/releases/download/v0.1.10/transcript_0.1.10_darwin_arm64.tar.gz"
+      sha256 "42899b05b2499df81487c62059ff0ef296444e9e67c70999e70bb96281c82ccd"
 
       define_method(:install) do
         bin.install "transcript"
@@ -29,15 +29,15 @@ class Transcript < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ziqorg/transcript/releases/download/v0.1.9/transcript_0.1.9_linux_amd64.tar.gz"
-      sha256 "66e30a7581711552ad364e46f24eee83801dfe641827196e94187ce30c654af3"
+      url "https://github.com/ziqorg/transcript/releases/download/v0.1.10/transcript_0.1.10_linux_amd64.tar.gz"
+      sha256 "eaeba37630e251e3e0143529397e03c119d8f6b90475c620cdababfbb6a87da5"
       define_method(:install) do
         bin.install "transcript"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ziqorg/transcript/releases/download/v0.1.9/transcript_0.1.9_linux_arm64.tar.gz"
-      sha256 "6e4961d434ad002c0280ae9574e06b2f4126849b6b903787787a01131caa3e24"
+      url "https://github.com/ziqorg/transcript/releases/download/v0.1.10/transcript_0.1.10_linux_arm64.tar.gz"
+      sha256 "f3e5bb595fd43625ad9670c2b468479169322aaace8faaf67e64910c971bb6fb"
       define_method(:install) do
         bin.install "transcript"
       end
